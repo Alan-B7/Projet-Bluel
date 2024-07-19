@@ -19,7 +19,7 @@ async function logIn() {
     
     const result = await response.json();
 
-    // Véfification des valeurs
+    // Vérification des valeurs
     if (!result.token) {
         alert("Erreur dans l’identifiant ou le mot de passe");
         return;
