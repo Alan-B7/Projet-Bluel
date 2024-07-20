@@ -436,7 +436,7 @@ footer nav ul {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background: url("/FrontEnd/assets/icons/down-arrow-icon.png") 96% / 5% no-repeat;
+	background: url("./icons/down-arrow-icon.png") 96% / 5% no-repeat;
 }
 
 .headband{

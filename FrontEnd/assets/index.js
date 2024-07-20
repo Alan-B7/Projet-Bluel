@@ -58,7 +58,6 @@ const initialize = async () => {
 // Rafraîchissement des travaux 
 const refreshWorks = async () => {
     let allWorks = await getWorks();
-    console.log('All works fetched from API:', allWorks);
     generateWorks(allWorks);
     generateWorksInModal(allWorks);
     
@@ -117,7 +116,6 @@ const generateWorks = (allWorks) => {
         portfolioWorks.appendChild(workElement);
         workElement.append(imageElement, titleElement);
     }
-    console.log('Number of works generated:', allWorks.length);
 };
 
 // Fonction qui initialise les boutons de catégories et filtre les travaux
@@ -394,7 +392,7 @@ const generateWorkElementsInModal = (works) => {
 
     // Créer la légende
     const titleElement = document.createElement('p');
-    titleElement.innerText = 'éditer';
+    titleElement.innerText = '';
 
     // Rattachement des balises
     workElement.appendChild(imageElement);
